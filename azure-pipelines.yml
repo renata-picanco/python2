@@ -69,6 +69,7 @@ stages:
   jobs:
   - deployment: DeploymentJob
     pool:
+      name: AgenteLinux
       vmImage: $(vmImageName)
     environment: $(environmentName)
     strategy:
